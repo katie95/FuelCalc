@@ -1,0 +1,14 @@
+1.加油记录日期排序
+2.储存信息的问题，主要是两张表 solved
+3.计算百公里油耗
+
+Jan 20 issues:
+两辆车的fuelinfo相同solved
+fuelinfo具体内容未能保存 solved
+清空车辆数据时应当把相应加油记录清除 solved
+一键清空
+
+Jan 21:
+搜索栏
+排序
+算法
