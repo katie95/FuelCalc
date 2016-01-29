@@ -12,3 +12,7 @@ Jan 21:
 搜索栏
 排序
 算法
+
+Jan 29:
+fix the bug: parent car not initialized without the fuelInfoViewController, causes null pointer error when deleting the car
+other issue: cars with same name? search bar and sorting
