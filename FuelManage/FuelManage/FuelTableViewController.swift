@@ -36,7 +36,7 @@ class FuelTableViewController: UITableViewController {
         }else{
             fuelInfoList = NSKeyedUnarchiver.unarchiveObjectWithFile(filePath) as! NSMutableArray
         }
-    
+        
     
     }
 
@@ -113,6 +113,8 @@ class FuelTableViewController: UITableViewController {
     func deleteFuelInfoList(){
         let home = NSHomeDirectory() as NSString
         let docPath = home.stringByAppendingPathComponent("Documents") as NSString
+        
+        
         let pathString = String(parentCar.Name) + "fuel.data"
         let filePath = docPath.stringByAppendingPathComponent(pathString)
         NSKeyedArchiver.archiveRootObject(NSMutableArray(), toFile: filePath)

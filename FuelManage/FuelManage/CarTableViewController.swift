@@ -85,6 +85,10 @@ class CarTableViewController: UITableViewController{
         if editingStyle == .Delete {
             // Delete the row from the data source
             let car = carList[indexPath.row] as! Car
+            //if the parent car has not been initialized, assign the car to parent car
+            if (car.FuelInfo.parentCar == nil){
+                car.FuelInfo.parentCar = car
+            }
             car.FuelInfo.deleteFuelInfoList()
             carList.removeObjectAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
